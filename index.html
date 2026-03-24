@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Hambarde | Portfolio</title>
+  <meta name="description" content="Portfolio of Krishna Hambarde – CSE student, data analyst, and web developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =================== PARTICLE CANVAS =================== -->
+  <canvas id="particles"></canvas>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">K<span>H</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <!-- =================== HERO / HOME =================== -->
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in">Hello, I'm</p>
+        <h1 class="hero-name animate-in">Krishna <span class="gradient-text">Hambarde</span></h1>
+        <div class="hero-typing-wrapper animate-in">
+          <span class="hero-typing" id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-tagline animate-in">CSE Undergrad • Data Enthusiast • Problem Solver</p>
+        <div class="hero-buttons animate-in">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="resume.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper animate-in">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <img src="profile.jpg" alt="Krishna Hambarde" class="hero-image" id="profile-img" />
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text animate-in">
+          <p>
+            I'm <strong>Krishna Hambarde</strong>, a passionate <strong>Computer Science &amp; Engineering</strong>
+            student
+            at <strong>Lovely Professional University</strong>. I love turning raw data into actionable insights and
+            building creative digital solutions.
+          </p>
+          <p>
+            With a strong foundation in <strong>C++, Python, Java</strong> and hands‑on experience in
+            <strong>Data Analysis, EDA, and Web Development</strong>, I thrive on solving complex problems
+            and continuously learning new technologies.
+          </p>
+          <p>
+            Beyond coding, I'm an avid <strong>competitive programmer</strong> with <strong>150+ LeetCode
+              problems</strong>
+            solved, and I love participating in hackathons to sharpen my teamwork and coding skills.
+          </p>
+        </div>
+        <div class="about-stats animate-in">
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">LeetCode Problems</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-number" data-target="95">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">10th Score</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SKILLS =================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">My <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category glass-card animate-in">
+          <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>C++</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>C</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Frameworks -->
+        <div class="skill-category glass-card animate-in">
+          <div class="skill-category-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Data & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Manipulation</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Data Analysis</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Data Manipulation</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>Data Visualization</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>Data Analysis</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-category glass-card animate-in">
+          <div class="skill-category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">MS Office</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>MySQL</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>VS Code</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>Jupyter</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item"><span>MS Office</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category glass-card animate-in">
+          <div class="skill-category-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PROJECTS =================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">My <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card animate-in">
+          <div class="project-card-glow"></div>
+          <div class="project-icon"><i class="fa-solid fa-virus-covid"></i></div>
+          <h3>COVID-19 Vaccination Impact – EDA</h3>
+          <p class="project-date">Jan 2025 – Mar 2025</p>
+          <p>
+            Performed EDA comparing Unvaccinated, Vaccinated, and Boosted groups by analyzing
+            weekly trends, age distribution, and outcome patterns. Identified peak periods,
+            high‑risk age groups, and showed how vaccination reduces COVID-19 severity.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+          <a href="https://github.com/krishnapatil243/COVID-19-Vaccination-Impact" target="_blank" class="btn btn-sm"><i
+              class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card glass-card animate-in">
+          <div class="project-card-glow"></div>
+          <div class="project-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3>Consumer Complaints Dashboard</h3>
+          <p class="project-date">Feb 2025 – Mar 2025</p>
+          <p>
+            Designed dynamic visuals including Pivot Tables, charts, slicers, and a U.S. map chart
+            to analyze complaint trends, company responses, and issue categories. Provided insights
+            on resolution effectiveness and state-wise distribution.
+          </p>
+          <div class="project-tech">
+            <span>MS Excel</span><span>Pivot Tables</span><span>Charts</span><span>Map Charts</span>
+          </div>
+          <a href="https://github.com/krishnapatil243/-Consumer-Complaints-Dashboard-Overview" target="_blank"
+            class="btn btn-sm"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card glass-card animate-in">
+          <div class="project-card-glow"></div>
+          <div class="project-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Eco Track – AI Food Waste Tracker</h3>
+          <p class="project-date">Mar 2025 – Apr 2025</p>
+          <p>
+            Developed a modern web app to help users track, manage, and reduce food waste using AI
+            assistance. Features interactive dashboard, food-waste logging, AI chatbot for tips, gamification
+            badges, and a responsive UI.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span><span>Chart.js</span><span>Gemini AI</span>
+          </div>
+          <a href="https://github.com/krishnapatil243/Food-Waste-Tracker" target="_blank" class="btn btn-sm"><i
+              class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== TRAINING =================== -->
+  <section id="training" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">Training & <span class="gradient-text">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>Summer Training in C++ and DSA</h3>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Jun 2025 – Jul 2025</p>
+            <p>
+              Completed intensive training in C++ Programming and Data Structures &amp; Algorithms. Practiced OOP
+              concepts, implemented key data structures, and solved multiple coding exercises and mini-projects.
+            </p>
+            <div class="project-tech">
+              <span>C++</span><span>VS Code</span><span>Git/GitHub</span><span>STL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CERTIFICATIONS =================== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">My <span class="gradient-text">Certifications</span></h2>
+      <div class="certs-grid">
+        <div class="cert-card glass-card animate-in">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>ChatGPT Prompt Engineering</h3>
+          <p class="cert-issuer">Coursera</p>
+          <p class="cert-date">Oct 2025</p>
+          <a href="https://drive.google.com/file/d/1P1xrOdKox62nCoFsZIvIlh_L-eAFQcC9/view?usp=drive_link"
+            target="_blank" class="btn btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            Certificate</a>
+        </div>
+        <div class="cert-card glass-card animate-in">
+          <div class="cert-icon"><i class="fa-solid fa-cubes"></i></div>
+          <h3>Object Oriented Programming</h3>
+          <p class="cert-issuer">I am Neo</p>
+          <p class="cert-date">Dec 2024</p>
+          <a href="https://drive.google.com/file/d/1g-UH_WkgMqEqnAxbcR9VdAAtwA2MWVNv/view?usp=drive_link"
+            target="_blank" class="btn btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            Certificate</a>
+        </div>
+        <div class="cert-card glass-card animate-in">
+          <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Intro to Hardware &amp; OS</h3>
+          <p class="cert-issuer">Coursera</p>
+          <p class="cert-date">Sep 2024</p>
+          <a href="https://drive.google.com/file/d/1KJguepax1yJDHHQSbyvLfu0VXnFyiJ6h/view?usp=drive_link"
+            target="_blank" class="btn btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            Certificate</a>
+        </div>
+        <div class="cert-card glass-card animate-in">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Bits &amp; Bytes of Networking</h3>
+          <p class="cert-issuer">Coursera</p>
+          <p class="cert-date">Sep 2024</p>
+          <a href="https://drive.google.com/file/d/1PBm5kui6emTBjR84LBUeKtoS21ISkUJn/view?usp=drive_link"
+            target="_blank" class="btn btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ACHIEVEMENTS =================== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">Key <span class="gradient-text">Achievements</span></h2>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card animate-in">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>150+ LeetCode Problems</h3>
+          <p>
+            Demonstrating strong problem-solving skills and deep understanding of Data Structures and Algorithms
+            through consistent competitive programming practice.
+          </p>
+        </div>
+        <div class="achievement-card glass-card animate-in">
+          <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>Code-A-Hunt Hackathon</h3>
+          <p>
+            Collaborated in a competitive coding environment, applying programming and teamwork skills to solve
+            real-world problems under time constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== EDUCATION =================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">My <span class="gradient-text">Education</span></h2>
+      <div class="timeline">
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>B.Tech – Computer Science & Engineering</h3>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug 2023 – Present</p>
+            <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> Lovely Professional University, Phagwara,
+              Punjab</p>
+            <p><strong>CGPA:</strong> 6.5</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>Intermediate</h3>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Apr 2022 – Mar 2023</p>
+            <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> Narayana Junior College, Ghatkesar,
+              Telangana</p>
+            <p><strong>Percentage:</strong> 94.8%</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <h3>Matriculation</h3>
+            <p class="timeline-date"><i class="fa-regular fa-calendar"></i> Jun 2020 – Mar 2021</p>
+            <p class="timeline-place"><i class="fa-solid fa-location-dot"></i> Alphores High School, Bhainsa, Telangana
+            </p>
+            <p><strong>Percentage:</strong> 95.5%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title animate-in">Get in <span class="gradient-text">Touch</span></h2>
+      <p class="section-subtitle animate-in">Feel free to reach out – I'd love to connect!</p>
+      <div class="contact-grid">
+        <a href="mailto:krishnahambarde1234@gmail.com" class="contact-card glass-card animate-in" id="contact-email">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>krishnahambarde1234@gmail.com</p>
+        </a>
+        <a href="tel:+916304827488" class="contact-card glass-card animate-in" id="contact-phone">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Phone</h3>
+          <p>+91-6304827488</p>
+        </a>
+        <a href="https://www.linkedin.com/in/krishna-patil-38b8b73b8/" target="_blank"
+          class="contact-card glass-card animate-in" id="contact-linkedin">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <h3>LinkedIn</h3>
+          <p>Krishna Hambarde</p>
+        </a>
+        <a href="https://github.com/krishnapatil243" target="_blank" class="contact-card glass-card animate-in"
+          id="contact-github">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>krishnapatil243</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-logo">K<span>H</span></p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/krishna-patil-38b8b73b8/" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/krishnapatil243" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="mailto:krishnahambarde1234@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 Krishna Hambarde. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
